@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="374dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="273dp"
+            android:layout_height="48dp"
+            android:text="Informations d'un client"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/et_name"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_margin="10dp"
+            android:hint="Nom complet"
+            android:layout_below="@+id/textView3"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/et_courriel"
+            android:hint="Courriel"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/et_name"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/et_phone"
+            android:hint="Téléphone"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/et_courriel"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/et_password"
+            android:hint="Mot de passe"
+            android:layout_width="170dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/et_phone"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/et_mdpValid"
+            android:layout_margin="10dp"
+            android:layout_width="173dp"
+            android:layout_height="48dp"
+            android:hint="Confirmation de mot de passe"
+            android:layout_below="@+id/et_password"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <CheckBox
+            android:id="@+id/chk_mdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:onClick="onClickChk_conditions"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginBottom="57dp"
+            android:text="Afficher" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="146dp"
+            android:layout_height="144dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:layout_marginBottom="152dp"
+            app:srcCompat="@drawable/icon" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="219dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="2dp"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="395dp"
+            android:layout_height="48dp"
+            android:text="J'accepte de recevoir l'infolettre pour les
+nouveaux événements." />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="411dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:text="AJOUT D'UNE IMAGE AU PROFIL" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="411dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="23dp"
+            android:text="Sauvegarder" />
+    </LinearLayout>
+
+
+</RelativeLayout>
